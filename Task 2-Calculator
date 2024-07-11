@@ -1,0 +1,22 @@
+x=int(input("Enter first number:"))
+y=int(input("Enter second number:"))
+print("Choose any operation to perform:")
+print("a.Addition")
+print("b.Subtraction")
+print("c.Multiplication")
+print("d.Division")
+user=input("Enter your choice:")
+Addition=x+y
+Subtraction=x-y
+Multiplication=x*y
+Division=x/y
+if user== 'a':
+  print(Addition)
+if user== 'b':
+  print(Subtraction)
+if user== 'c':
+    print(Multiplication)
+if user=='d':
+  print(Division)
+else:
+  print("Invalid Input")
