@@ -1,0 +1,20 @@
+import random
+print("wanna play or quit?")
+user_choice_1=input()
+if user_choice_1=='play':
+  print("**Let's play!**")
+  while True:
+    choices=["Rock","Paper","Scissors"]
+    computer_choice=random.choices(choices)
+    user_choice=input("Enter your choice: ")
+    print(f"User choices is {[user_choice]}")
+    print(f"Computer choices is {computer_choice}")
+    if(user_choice=="Rock" and computer_choice=="Scissors" or user_choice=="Scissors" and computer_choice=="Paper" or user_choice=="Paper" and computer_choice_choice=="Rock"):
+      print("You Win!")
+    elif user_choice==computer_choice:
+      print("It's a tie!")
+    else:
+      print("You Lose!")
+      break
+if user_choice_1=="quit":
+  print("**Thanks for playing**")
